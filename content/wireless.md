@@ -39,6 +39,11 @@ Some router settings can cause problems. Try adjusting your access point to thes
 - Check if the router is set to N speeds only.  Auto B/G/N is preferred.
 - Lower the max/burst speeds, turn off channel bonding, and reduce channel width. Setting the speed to 600 Mb/s or 450 Mb/s will use spread frequencies to achieve those speeds and may decrease stability. Try setting it to 289/300 Mb/s (N speed) or or 54 Mb/s (G speed).
 - After making these changes, reboot the router.
+- 
+### Windows Dual Boot
+This is the solution if you are running Pop OS with Windows.Start  by doing this before trying the other given solutions which might work temporarily.
+If you are dual booting Windows, you may lose access to your wifi card entirely after running driver/OS updates in Windows. You may be able to gain access to your wifi card again by disabling "Fast Startup" * (https://pureinfotech.com/disable-fast-startup-windows-11-10/)in the Windows power options before booting back into Pop!_OS.
+
 
 If the issues started after you applied updates, try running this command to make sure a bad WiFi driver has not been installed, then reboot your computer:
 
@@ -204,6 +209,3 @@ The newest version of the <u>linux-firmware</u> package, which contains the iwlw
 
 Sometimes the newest version of the firmware will clear up occasional bugs.  Please download the newest `.deb` package.
 
-### Windows Dual Boot
-
-If you are dual booting Windows, you may lose access to your wifi card entirely after running driver/OS updates in Windows. You may be able to gain access to your wifi card again by disabling "Fast Startup" in the Windows power options before booting back into Pop!_OS.
